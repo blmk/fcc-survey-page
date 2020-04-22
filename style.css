@@ -1,45 +1,45 @@
+
 body {
-    background-color: #eee;
-    text-align: center;
     box-sizing: border-box;
+    text-align: center;
+    background-color: #eee;
     font-family: "Open sans";
-    font-weight: 300;
-    background-image: url(3.jpg);
+    font-weight: 300;  
+    background-image: url(images/3.jpg);
     background-size: cover;
     background-position: 0 -800px;
     background-repeat: no-repeat;
 }
 
 .container {
-    width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 360px;
     margin: 0 auto;
-}
-
-main {
-    width: 100%;
     background-color: #ffffff;
     border: 1px solid #999;
     border-radius: 5px;
     -webkit-box-shadow: 5px 5px 10px 6px rgba(102,102,102,0.99); 
     box-shadow: 5px 5px 10px 6px rgba(102,102,102,0.99);
+}
+
+header .logo { width: 60%; }
+
+header #title { margin: 0; }
+
+
+main {
+    width: 100%;
     margin: 5px;
 }
-.container .logo {
-    width: 60%;
-}
 
-.container #title {
-    margin: 0;
-}
 
 main form {
-    margin: 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 20px 20px;
 }
 
 main label,
@@ -51,26 +51,34 @@ main legend {
     margin-top: 5px;
 }
 
-main h1 {
-    font-size: 26px;
-}
-input, button, textarea {
+input, 
+button, 
+textarea,
+fieldset {
     box-sizing: border-box;
 }
 
 main input,
 main #dropdown {
-    border: 1px solid #e6e6e6;
-    border-radius: 4px;
     width: 100%;
     height: 32px;
     font-size: 12px;
     padding-left: 3px;
     background-color: #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
     transition: border .5s;
-    
 }
-main input[type="radio"] {
+
+
+main fieldset {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+main input[type="radio"],
+main input[type="checkbox"] {
     display: inline-block;
     width: 15px;
     height: .8em;
@@ -79,14 +87,7 @@ main input[type="radio"] {
     vertical-align: -2px;
 }
 
-main input[type="checkbox"] {
-    display: inline-block;
-    width: 15px;
-    height: .6em;
-    margin: 0 5px;
-    padding: 10px 0;
-    vertical-align: -2px;
-}
+main input[type="checkbox"] { height: .6em; }
 
 main input:hover, 
 main input:focus,
@@ -98,33 +99,28 @@ main #dropdown:focus {
 
 
 
-fieldset {
-    margin-top: 10px;
-    text-align: left;
-    width: 100%;
-    box-sizing: border-box;
-}
-#form-comments {
+
+main #form-comments {
     width: 100%;
     height: 7em;
     font-family: "Open sans";
     font-size: 12px;
+    background-color: #eee;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
-    background-color: #eee;
     transition: border .5s;
 }
 
 main button {
-    margin-top: 25px;
     width: 100%;
-    padding: 20px ;
-    background-color: #68c2e8;
     height: 60px;
+    margin-top: 25px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #68c2e8;
     color: white;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
-    font-size: 20px;
 }
 
 main a {
@@ -135,10 +131,6 @@ main a {
 }
 
 
-main a:hover {
-    text-decoration: underline;
-}
+main a:hover { text-decoration: underline; }
 
-footer {
-    margin-top: 15px;
-}
+footer { margin-top: 15px; }
