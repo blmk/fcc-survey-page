@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids on Lesson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <main >   
+            <img src="images/kids-on-lesson.png" class="logo" alt="">
+
+            <h1 id="title">Register</h1>
+            <p id="description">Free digital education for kids</p>
+        
+                
+            <form action="" id="survey-form">
+                <label for="name" id="name-label">Username</label>
+                <input type="text" id="name" placeholder="Please enter your username" required>
+                
+                <label for="email" id="email-label">E-mail</label>
+                <input type="email" id="email" placeholder="Please enter your email address" required>
+                
+                <label for="number" id="number-label">Kid's age</label>
+                <input type="number" id="number" placeholder="How old is your kid ?" min="3" max="14">
+                
+                <label for="dropdown">Select course</label>
+                <select id="dropdown">
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="history">History</option>
+                </select>
+                
+                <fieldset>
+                    <legend>What time of day do you prefer ?</legend>
+                    <label for="morning" > <input type="radio" name="timeday" value="morning" id="morning" checked>Morning</label>
+                    <label for="afternoon" > <input type="radio" name="timeday" value="afternoon" id="afternoon">Afternoon</label>
+                    <label for="evening" > <input type="radio" name="timeday" value="evening" id="evening">Evening</label>
+                </fieldset>
+
+                <label for="form-comemnts" id="comments-label">Comments and suggestions </label>
+                <textarea id="form-comments" placeholder="Enter your comments here..."></textarea>
+                
+                <label for="privacy-policy" > <input type="checkbox" name="privacy-policy" value="privacy-accept" id="privacy-policy" >I accept Privacy Policy</label>
+                <label for="subscription" > <input type="checkbox" name="subscription" value="subscription-accept" id="subscription" >Subscribe to newsletter</label>
+
+
+                <button id="submit">Sign up</button>
+            </form>
+            <p><a href="#">Terms and conditions</a> | <a href="#">Privacy Policy</a></p>
+        </main>
+        
+        <footer>
+            <small>&copy; 2020 Made with Love</small>
+        </footer>
+    </div>
+ 
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

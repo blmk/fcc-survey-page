@@ -1,0 +1,144 @@
+body {
+    background-color: #eee;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Open sans";
+    font-weight: 300;
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-position: 0 -800px;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #999;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 10px 6px rgba(102,102,102,0.99); 
+    box-shadow: 5px 5px 10px 6px rgba(102,102,102,0.99);
+    margin: 5px;
+}
+.container .logo {
+    width: 60%;
+}
+
+.container #title {
+    margin: 0;
+}
+
+main form {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main label,
+main legend {
+    display: block;
+    line-height: 1.5em;
+    font-size: .8em;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+
+main h1 {
+    font-size: 26px;
+}
+input, button, textarea {
+    box-sizing: border-box;
+}
+
+main input,
+main #dropdown {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    width: 100%;
+    height: 32px;
+    font-size: 12px;
+    padding-left: 3px;
+    background-color: #eee;
+    transition: border .5s;
+    
+}
+main input[type="radio"] {
+    display: inline-block;
+    width: 15px;
+    height: .8em;
+    margin: 0 5px;
+    padding: 10px 0;
+    vertical-align: -2px;
+}
+
+main input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    height: .6em;
+    margin: 0 5px;
+    padding: 10px 0;
+    vertical-align: -2px;
+}
+
+main input:hover, 
+main input:focus,
+main #form-comments:hover,
+main #form-comments:focus,
+main #dropdown:focus {
+    border: 1px solid #0e1e40;
+}
+
+
+
+fieldset {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+#form-comments {
+    width: 100%;
+    height: 7em;
+    font-family: "Open sans";
+    font-size: 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background-color: #eee;
+    transition: border .5s;
+}
+
+main button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 20px ;
+    background-color: #68c2e8;
+    height: 60px;
+    color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+main a {
+    text-decoration: none;
+    color: 004d4d;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+main a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 15px;
+}
