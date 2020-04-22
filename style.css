@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     font-family: "Open sans";
     font-weight: 300;
-    background-image: url(images/3.jpg);
+    background-image: url(3.jpg);
     background-size: cover;
     background-position: 0 -800px;
     background-repeat: no-repeat;
